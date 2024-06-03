@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lara Pet Market</title>
+    <!-- Link del css-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Inicio del encabezado-->
+    <header>        
+    <!-- Inicio del nav-->
+    <nav class="nav">
+        <div><img class="logo" src="assets/images/logo.png" alt="Logo"></div>
+        <div class="carrito">
+            <span id="precio-total"><button id="boton-agregar-al-carrito">🛒</button> Total: $0</span>
+            <button id="boton-vaciar-carrito">Vaciar Carrito</button>
+            <button id="boton-finalizar-compra">Finalizar</button>
+        </div>
+    </nav>
+    <!-- Cierre del nav-->
+    </header>
+    <h1 id="title"></h1>
+
+    <div class="BuscarProducto">
+        <input id="buscar" type="text" placeholder="Ingresa el producto">
+        <button id="buscarP">Buscar</button>
+    </div>
+
+    <div id="formContainer"></div>
+
+    <div id="mensajeSaludar" class="mensajeSaludar"></div>
+
+    <p id="datosUsuario"></p>
+
+    <h2 id="subtitulo"></h2>
+
+    <div class="grid-container" id="contenedor-productos"></div>
     
+    <div id="precio-total"></div>
+    
+    <div id="modal-finalizar-compra" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Compra finalizada. Gracias por tu compra!</p>
+            <button id="cerrar-modal">Cerrar</button>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
