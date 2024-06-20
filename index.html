@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lara Pet Market</title>
+    <!-- Link SweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Link Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- Link del css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="light-mode">
     <!-- Inicio del encabezado-->
     <header>        
     <!-- Inicio del nav-->
     <nav class="nav">
         <div><img class="logo" src="assets/images/logo.png" alt="Logo"></div>
-        <div class="carrito">
-            <span id="precio-total"><button id="boton-agregar-al-carrito">🛒</button> Total: $0</span>
-            <button id="boton-vaciar-carrito">Vaciar Carrito</button>
-            <button id="boton-finalizar-compra">Finalizar</button>
-        </div>
     </nav>
     <!-- Cierre del nav-->
     </header>
     <h1 id="title"></h1>
-
+    <button id="toggle-mode" class="btn-toggle-mode"><span id="mode-icon">🌙</span></button>
     <div class="BuscarProducto">
         <input id="buscar" type="text" placeholder="Ingresa el producto">
         <button id="buscarP">Buscar</button>
@@ -32,22 +31,29 @@
 
     <div id="mensajeSaludar" class="mensajeSaludar"></div>
 
-    <p id="datosUsuario"></p>
-
     <h2 id="subtitulo"></h2>
 
     <div class="grid-container" id="contenedor-productos"></div>
-    
-    <div id="precio-total"></div>
-    
-    <div id="modal-finalizar-compra" class="modal">
+
+    <div id="contenedor-productos"></div>
+    <div id="modal-carrito" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <p>Compra finalizada. Gracias por tu compra!</p>
-            <button id="cerrar-modal">Cerrar</button>
+            <div id="contenedor-carrito"></div>
+            <div id="precio-total"></div>
+            <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+            <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
         </div>
     </div>
 
+    <footer id="footer">
+        <p>© 2024 Lara Pet Market. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
     <script src="main.js"></script>
+
 </body>
+
 </html>

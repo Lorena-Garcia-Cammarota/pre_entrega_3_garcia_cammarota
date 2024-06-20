@@ -1,0 +1,60 @@
+{
+  "productos": [
+    {
+      "codigo": 1,
+      "nombre": "Cama",
+      "precio": 1200,
+      "stock": 25,
+      "imagen": "assets/images/cama.png"
+    },
+    {
+      "codigo": 2,
+      "nombre": "Platos",
+      "precio": 250,
+      "stock": 100,
+      "imagen": "assets/images/platos.png"
+    },
+    {
+      "codigo": 3,
+      "nombre": "Bolsas",
+      "precio": 100,
+      "stock": 50,
+      "imagen": "assets/images/bolsas.png"
+    },
+    {
+      "codigo": 4,
+      "nombre": "Collar Perro",
+      "precio": 300,
+      "stock": 50,
+      "imagen": "assets/images/collarperro.png"
+    },
+    {
+      "codigo": 5,
+      "nombre": "Collar Gato",
+      "precio": 280,
+      "stock": 50,
+      "imagen": "assets/images/collargato.png"
+    },
+    {
+      "codigo": 6,
+      "nombre": "Correas",
+      "precio": 300,
+      "stock": 50,
+      "imagen": "assets/images/correas.png"
+    },
+    {
+      "codigo": 7,
+      "nombre": "Juguete Perro",
+      "precio": 250,
+      "stock": 10,
+      "imagen": "assets/images/jugueteperro.png"
+    },
+    {
+      "codigo": 8,
+      "nombre": "Juguete Gato",
+      "precio": 320,
+      "stock": 10,
+      "imagen": "assets/images/juguetegato.png"
+    }
+  ]
+}
